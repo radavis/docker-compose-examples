@@ -1,0 +1,5 @@
+services:
+  db:
+    image: mariadb:${MARIADB_VERSION}
+    ports:
+      - "3306:3306"
