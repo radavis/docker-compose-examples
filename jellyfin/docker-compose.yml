@@ -10,8 +10,20 @@ services:
       - ./config:/config
       - ./cache:/cache
       - type: bind
-        source: ./media
-        target: /media
+        source: /home/rd/Videos/tv
+        target: /tv
+        read_only: true
+      - type: bind
+        source: /home/rd/Videos/edu
+        target: /edu
+        read_only: true
+      - type: bind
+        source: "/home/rd/Videos/Music Videos"
+        target: /music_videos
+        read_only: true
+      - type: bind
+        source: "/home/rd/Videos/Movies"
+        target: /movies
         read_only: true
     restart: 'unless-stopped'
     env_file:
