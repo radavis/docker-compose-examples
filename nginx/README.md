@@ -11,8 +11,9 @@ $ docker run \
     nginx
 
 # with docker-compose
-$ alias dc=docker-compose
 $ dc up -d
+$ curl localhost:8080
+$ open http://localhost:8080
 ```
 
-Visit [localhost:8080]
+- [hub.docker.com/nginx](https://hub.docker.com/_/nginx#how-to-use-this-image)

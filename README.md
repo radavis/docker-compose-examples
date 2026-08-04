@@ -3,6 +3,7 @@
 `docker-compose` examples for running services in a local development environment.
 
 ```bash
+$ docker ps
 $ cd service-name
 $ cp .env.example .env # then, modify vars
 $ alias dc=docker-compose
